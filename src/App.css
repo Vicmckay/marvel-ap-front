@@ -1,38 +1,117 @@
-.App {
+.headerLogo img {
+  height: 200px;
+  width: 100%;
+}
+
+.marvel-group {
   text-align: center;
+  margin-top: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.menuHeader {
+  height: 60px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 22px;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.characterContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 600px;
+  height: 630px;
+  background-color: red;
+  margin: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.charactersContainer {
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.charactersContainer img {
+  width: 600px;
+  height: 450px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.characterContainer h2 {
+  font-size: 25px;
+  font-family: bold;
+  text-align: center;
+}
+
+.characterContainer p {
+  padding-left: 10px;
+}
+
+.comicContainer {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 1100px;
+  background-color: rgb(48, 158, 202);
+  margin: 20px;
+  color: white;
+}
+
+.comicsContainer img {
+  width: 600px;
+  height: 850px;
+}
+
+.comicsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.comicContainer h2 {
+  font-size: 25px;
+  font-family: bold;
+  text-align: center;
+}
+
+.comicContainer p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.search {
+  height: 50px;
+  width: 100%;
+  background-color: darkgrey;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search input {
+  height: 30px;
+  width: 140px;
+  margin-right: 20px;
+}
+
+.input-character input {
+  height: 30px;
+}
+
+.pageButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageButton button {
+  width: 100px;
+  height: 40px;
+  margin-right: 20px;
+  font-size: 20px;
+  margin-top: 20px;
 }

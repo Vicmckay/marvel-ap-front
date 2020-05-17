@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(236, 235, 216);
+}
+
 .headerLogo img {
   height: 200px;
   width: 100%;
@@ -82,20 +86,25 @@
   padding-right: 10px;
 }
 
-.search {
+.search form {
   height: 50px;
-  width: 100%;
   background-color: darkgrey;
   margin-top: 5px;
+  box-sizing: border-box;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .search input {
   height: 30px;
   width: 140px;
   margin-right: 20px;
+}
+
+.search button {
+  height: 38px;
+  width: 140px;
 }
 
 .input-character input {

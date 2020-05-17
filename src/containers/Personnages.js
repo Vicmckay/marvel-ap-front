@@ -31,14 +31,14 @@ const Personnages = () => {
       <div className="pageButton">
         <button
           onClick={() => {
-            offset > 0 && setOffset(offset - 20);
+            offset > 0 && setOffset(offset - 100);
           }}
         >
           Previous
         </button>
         <button
           onClick={() => {
-            setOffset(offset + 20);
+            setOffset(offset + 100);
           }}
         >
           Next
@@ -74,14 +74,14 @@ const Personnages = () => {
       <div className="pageButton">
         <button
           onClick={() => {
-            offset > 0 && setOffset(offset - 20);
+            offset > 0 && setOffset(offset - 100);
           }}
         >
           Previous
         </button>
         <button
           onClick={() => {
-            setOffset(offset + 20);
+            setOffset(offset + 100);
           }}
         >
           Next

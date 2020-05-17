@@ -12,16 +12,17 @@ const Search = ({ setData }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="search">
+    <div className="search">
+      <form onSubmit={handleSubmit}>
         <input
           onChange={(e) => setSearchInput(e.target.value)}
-          placeholder="Recherche personnages"
+          placeholder="Your research"
+          value={searchInput}
           type="text"
         />
-        <input type="submit" value="Rechercher" name="search" />
-      </div>
-    </form>
+        <button type="submit">Valid</button>
+      </form>
+    </div>
   );
 };
 

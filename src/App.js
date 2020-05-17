@@ -4,7 +4,7 @@ import "./App.css";
 import axios from "axios";
 import Home from "./containers/Home";
 import Comics from "./containers/Comics";
-import Comic from "./containers/Comic";
+import ComicsPerCharacter from "./containers/ComicsPerCharacter";
 import Favoris from "./containers/Favoris";
 import Personnages from "./containers/Personnages";
 
@@ -14,7 +14,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get("http://localhost:3000/characters");
+      const response = await axios.get("https://git.heroku.com/marvel-ap.git");
       console.log(response.data);
       setCharacters(response.data.data.results);
       setIsLoading(false);
@@ -73,9 +73,8 @@ function App() {
           <Route path="/favoris">
             <Favoris />
           </Route>
-          <Route path="/comic/comics/items">
-            <Comic />
-            <Favoris />
+          <Route path="/:characterId/comics">
+            <ComicsPerCharacter />
           </Route>
 
           <Route path="/">

@@ -79,11 +79,13 @@ body {
   font-size: 25px;
   font-family: bold;
   text-align: center;
+  padding-top: 10px;
 }
 
 .comicContainer p {
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 10px;
 }
 
 .search form {

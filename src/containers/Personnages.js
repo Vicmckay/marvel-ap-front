@@ -6,7 +6,7 @@ import Search from "../components/Search";
 const Personnages = () => {
   const [characters, setCharacters] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [data, setData] = useState([]);
+  const [setData] = useState([]);
   const [offset, setOffset] = useState(0);
 
   useEffect(() => {

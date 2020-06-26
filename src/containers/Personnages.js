@@ -12,7 +12,7 @@ const Personnages = () => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(
-        `http://localhost:3000/characters?offset=${offset}`
+        `https://marvel-react-ap.herokuapp.com/characters?offset=${offset}`
       );
       console.log(response.data);
       setCharacters(response.data.data.results);

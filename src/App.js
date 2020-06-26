@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(
-        "https://marvel-react-ap.herokuapp.com/"
+        "https://marvel-react-ap.herokuapp.com/characters"
       );
       console.log(response.data);
       setCharacters(response.data.data.results);

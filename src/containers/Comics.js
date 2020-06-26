@@ -9,7 +9,7 @@ const Comics = () => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(
-        `http://localhost:3000/comics?offset=${offset}`
+        `https://marvel-react-ap.herokuapp.com/comics?offset=${offset}`
       );
       setComics(response.data.data.results);
       setIsLoading(false);
